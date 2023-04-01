@@ -1,8 +1,10 @@
 # Folio le Nas - Portfolio
 Site URL: portfolio-le-nas.netlify.app
-git 
+--
 Github Repo URL: https://github.com/eversometiculous/Portfolio_a_Nas
-
+--
+Video presentation(Vimeo) URL:
+--
 
 ## Overview
 This is a portfolio website for displaying information about me. This is a development page and I will keep on adding those features in this readme as I add on to the website. As of right now, the features will include an index page, about page, skills page, experience and education page, blog page that will have 6 blog posts with url links to each, and finally the contact page.
