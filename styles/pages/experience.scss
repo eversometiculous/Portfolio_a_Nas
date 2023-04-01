@@ -1,0 +1,148 @@
+@import "../defaults/color";
+@import "../components/footer";
+@import "../components/header";
+
+/*==career-education=========================*/
+#career-education{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 950px;
+    width: 100%;
+    margin:0px auto 20px auto;
+    padding-top: 80px;
+    margin-bottom: 0px;
+    position: relative;
+}
+#career-education::before{
+    content: '';
+    position:absolute;
+    left: 50%;
+    top: calc(50% - 30px);
+    transform: translate(-50%,-50%);  
+    height: 100%;
+    width: 1px;
+    background-color: $color2;
+}
+.c-box-container{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 0px;
+    width: 100%;
+}
+
+.career h3{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 3.1rem;
+    color: $logo-color1;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+.career span{
+    color: $main-text-color1;
+    font-size: 1.6rem;
+    margin-left: 10px;
+}
+.c-box{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 30px;
+    max-width: 400px;
+    background: rgb(248, 252, 255);
+    padding: 10px 20px;
+}
+.c-box:last-child{
+    margin-bottom: 0px;
+}
+.c-box h4{
+    font-size: 1.3rem;
+    color: $color3;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-left: 3px solid $main-text-color1;
+    padding-left: 10px;
+    line-height: 1.3rem;
+}
+.c-box strong{
+    color: $color4;
+    font-size: 0.91rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding-left: 12px;
+}
+.c-box span{
+    color: $color5;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    padding-left: 2px;
+    margin-top: 2px;
+    font-weight: 500;
+}
+.btn-c{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0px auto 50px auto;
+    max-width: 950px;
+}
+.btn-c a:hover{
+    opacity: 0.8;
+}
+/*==about(Hobbies-and-Accomplishments)===============================*/
+#about{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 100px;
+    position: relative;
+    padding: 50px 0px;
+}
+#about::before{
+    content: '';
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgb(248, 252, 255);
+   }
+.about-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 950px;
+    width: 100%;
+    z-index: 100;
+    position: relative;
+}
+.about-heading{
+    width: 380px;
+}
+.about-heading strong{
+    color: $main-text-color1;
+    font-size: 0.87rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+.about-heading h3{
+    color: $logo-color1;
+    font-size: 2.1rem;
+    margin: 15px 0px;
+    line-height: 2.8rem;
+}
+.about-details{
+    width: 465px;
+}
+.about-details p{
+    color: $color6;
+    margin: 10px 0px;
+}

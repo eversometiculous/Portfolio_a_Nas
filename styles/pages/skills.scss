@@ -1,0 +1,45 @@
+@import "../defaults/color";
+@import "../components/footer";
+@import "../components/header";
+
+/*==skills(languages)=========================*/
+#languages{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    max-width: 950px;
+    width: 100%;
+    margin: 0px auto 50px auto;
+    padding-bottom: 80px;
+    padding-top: 80px;
+}
+.language-box{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.language-box h3{
+    font-size: 1.3rem;
+    color: $logo-color1;
+    letter-spacing: 1px;
+}
+.language-box h3 span{
+    color: $main-text-color1;
+    font-weight: 600;
+    font-size: 4rem;
+    line-height: 1.3rem;
+}
+.language-box ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background: rgb(248, 252, 255);;
+    padding: 10px 20px;
+    margin-top: 10px;
+    list-style: inside;
+}
+.language-box ul li{
+    color: $color1;
+    font-weight: 500;
+    margin-right: 20px;
+    margin-top: 4px;
+}

@@ -1,0 +1,43 @@
+@import "../defaults/color";
+@import "../components/footer";
+@import "../components/header";
+
+/*==About Me(summary)===================================*/
+#summery{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 950px;
+    width: 100%;
+    margin:0px auto 0px auto;
+    padding-top: 90px;
+    margin-top: -20px;
+}
+.summery-heading{
+    max-width: 400px;
+    width: 100%;
+}
+.summery-details{
+    max-width: 470px;
+    width: 100%;
+    border: 1px solid rgb(236, 236, 236);
+    padding: 20px;
+    background: rgb(248, 252, 255);
+}
+.summery-heading strong{
+    color: $main-text-color1;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.summery-heading h2{
+    color: $blog-color1;
+    font-size:2.37rem;
+    line-height: 2.9rem;
+    margin: 20px 0px;
+}
+.summery-details p{
+    color: $content-color3;
+    font-size: 1rem;
+
+}
+

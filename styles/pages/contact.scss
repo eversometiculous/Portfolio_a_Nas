@@ -1,0 +1,141 @@
+@import "../defaults/color";
+@import "../components/footer";
+@import "../components/header";
+
+/*==contact=============================*/
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    #contact{
+        width: 100%;
+        max-width: 950px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 50px auto;
+        text-align: center;
+    }
+    .contact strong{
+        color: #689af8;
+        font-size: 0.87rem;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+    .contact h3{
+        color: #1d1d1d;
+        font-size: 2.37rem;
+        letter-spacing: 1px;
+    }
+    .contact p{
+        color: #202020;
+        max-width: 640px;
+        margin: 15px 0px;
+        letter-spacing: 1px;
+    }
+    .contact p b{
+        color: #252525;
+        font-weight: 500;
+    }
+
+    h2 {
+        color: $main-text-color1;
+    }
+
+    form {
+
+        .btn-div {
+            text-align: center;
+
+            #submit {
+                height: 40px;
+                min-width: 120px;
+                background-color: $main-text-color2;
+                color: $main-text-color1;
+                border-radius: 4px;
+                border: none;
+                outline: none;
+                font-size: 1.1rem;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: #45A7C590;
+                }
+                
+            }
+        }
+
+        .form-elements {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 24px;
+
+            label {
+                font-size: 1.2rem;
+            }
+            
+
+            .form-input {
+                border: 1px solid $color8;
+                border-radius: 4px;
+                outline: none;
+                font-size: 1.2rem;
+                font-family: 'Times New Roman', Times, serif;
+
+                &:not(.form-textarea) {
+                    height: 32px;
+                }
+
+                &.form-textarea {
+                    resize: none;
+                }
+
+                &:focus {
+                    box-shadow: 0 0 8px 3px $primary-color;
+                }
+
+
+            }
+        
+
+            .btn-div {
+            text-align: center;
+
+            #submit {
+                height: 40px;
+                min-width: 120px;
+                background-color: $main-text-color2;
+                color: $main-text-color1;
+                border-radius: 4px;
+                border: none;
+                outline: none;
+                font-size: 1.1rem;
+
+                &:hover {
+                    cursor: pointer;
+                    background-color: #45A7C590;
+                }
+                
+            }
+        }    }
+    }
+}
+
+@media screen and (min-width: 600px) {
+    main {
+        form {
+
+            .form-elements {
+                flex-direction: row;
+                justify-content: space-between;
+
+                .form-input {
+                    width: 70%;
+                }
+            }
+        }
+    }
+}

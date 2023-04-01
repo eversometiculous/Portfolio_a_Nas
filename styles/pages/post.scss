@@ -1,0 +1,46 @@
+@import "../defaults/color";
+@import "../components/footer";
+@import "../components/header";
+
+/*==post====================*/
+#post{
+    max-width: 1000px;
+    width: 90%;
+    margin: 50px auto;
+    margin-top: 100px;
+}
+.blog-img{
+    width: 100%;
+    max-height: 350px;
+    border-radius: 5px;
+    object-fit: cover;
+    object-position: center;
+}
+.content-post h1{
+    color: $content-color1;
+    font-size: 4rem;
+    line-height: 4.4rem;
+}
+.content-post span{
+    color: $main-text-color1;
+    margin-top: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+.content-post p{
+    margin: 20px 0px;
+    color: $content-color2;
+    line-height: 1.3rem;
+    letter-spacing: 0.3px;
+}
+.content-post strong{
+    color: $content-color3;
+}
+/*==media-breakpoints(various)====================*/
+@media(max-width:724px){
+    .content-post h1{
+        font-size: 2.3rem;
+        line-height: 2.6rem;
+        margin-bottom: 5px;
+    }
+}

@@ -1,0 +1,29 @@
+@import "./defaults/color";
+@import "./components/header";
+@import "./components/footer";
+
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+body{
+    margin: 0px;
+    padding: 0px;
+    font-family: poppins;
+    background-color: $primary-color;
+}
+::selection{
+    background-color: $selection-color;
+    color: $primary-color;
+}
+
+

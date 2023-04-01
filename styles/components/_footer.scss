@@ -1,0 +1,234 @@
+@import "../defaults/color";
+
+/*==footer========================*/
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 950px;
+    width: 100%;
+    margin: 100px auto 0px auto;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #d8d8d8;
+    
+}
+footer span{
+    color: $footer-color;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+}
+footer .footer-logo{
+    color: $footer-color2;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 3px;
+    font-size: 1.3rem;
+    font-family: Dancing Script;
+}
+/*==media-breakpoints(various)===============================*/
+@media(max-width:1010px){
+    #main,
+    #summery,
+    #languages,
+    #process,
+    #projects,
+    .dribble-btn-c,
+    #career-education,
+    .btn-c,
+    .about-container,
+    #contact,
+    .logo-container{
+        width: 90%;
+    }
+}
+@media(max-width:940px){
+    #career-education{
+        flex-direction: column;
+    }
+    #career-education::before{
+        display: none;
+    }
+    .career{
+        width: 100%;
+        border-bottom: 1px solid rgba(39, 39, 39, 0.4);
+        padding-bottom: 40px;
+    }
+    .edu{
+        margin-top: 50px;
+        border-bottom: none;
+        padding-bottom: 20px;
+    }
+    .btn-c{
+        justify-content: flex-start;
+    }
+    .btn-c a{
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width:850px){
+    #main{
+        padding:40px 0px 70px 0px;
+        min-height: 350px;
+    }
+    .main-img{
+        display: none;
+    }
+    .main-bg{
+        display: none;
+    }
+    .main-bg img{
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        object-position: center;
+    }
+    .main-text{
+        max-width: 100%;
+        width: 100%;
+    }
+    .main-text h1{
+        font-size: 4rem;
+    }
+    #summery{
+        flex-direction: column;
+    }
+    .summery-details,
+    .summery-heading{
+        max-width: 100%;
+    }
+    .summery-details{
+        margin-top: 40px;
+    }
+    #languages{
+        grid-template-columns: 1fr;
+    }
+    .process-container{
+        grid-template-columns: 1fr 1fr;
+        width: 80%;
+    }
+    .about-container{
+        flex-direction: column;
+    }
+    .about-details,
+    .about-heading{
+        width: 100%;
+        max-width: 100%;
+    }
+    .about-details{
+        margin-top: 40px;
+    }
+    .logo img{
+        height: 30px;
+    }
+}
+@media(max-width:500px){
+    .navigation{
+        height: 70px;
+    }
+    .logo-container{
+        width: 85%;
+    }
+    .logo{
+        font-size: 1.8rem;
+    }
+    
+    #main{
+        margin-top: 0px;
+        padding-top: 50px;
+    }
+    .main-bg{
+        display: none;}
+
+    .main-text::before{
+        font-size: 4rem;
+        line-height: 3.5rem;
+    }   
+    .main-text{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        margin-top: 100px;
+    }
+    .main-text strong{
+        font-size: 1.3rem;
+    }
+    .main-text h1{
+        font-size: 2.3rem;
+        line-height: 2.3rem;
+    }
+  
+    .process-container{
+        grid-template-columns: 1fr;
+        width: 90%;
+    }
+    #career-education{
+        padding-top: 0px;
+    }
+    .summery-heading strong{
+        font-size: 1rem;
+    }
+    .summery-heading h2{
+        font-size: 1.6rem;
+        line-height: 1.9rem;
+    }
+    
+
+.summery-heading a,
+.dribble-btn,
+.contact-btn,
+.about-heading a{
+    padding: 10px;
+    background-color: rgb(104, 154, 248,0.1);
+}
+.summery-details{
+    padding: 10px;
+}
+.language-box h3{
+    font-size: 1.2rem;
+}
+.process-heading h3,
+.project-heading h3,
+.career h3,
+.about-heading h3,
+.contact h3{
+    font-size: 2rem;
+    line-height: 2.5rem;
+}
+.process-box strong{
+    font-size: 1.3rem;
+}
+.project-box{
+    height: 330px;
+}
+.c-box h4{
+    font-size: 1.2rem;
+}
+.c-box strong{
+    margin-top: 4px;
+    font-size: 0.9rem;
+}
+}
+@media(max-width:410px){
+    .project-box{
+        height: 230px;
+    }
+}
+@media(max-width:320px){
+    #main{
+        padding-top: 40px;
+    }
+
+    .main-bg{
+        display: block;
+        position: absolute;
+        left: 50%;
+        top: -30%;
+        transform: translate(-50%,30%);}
+}
